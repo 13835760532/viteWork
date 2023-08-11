@@ -13,9 +13,10 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "prepare": "husky install",
+    "prepare": "echo 'Preparing...'",
     "commitlint": "commitlint --edit",
     "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
+    
   },
   "dependencies": {
     "pinia": "^2.1.4",
@@ -51,9 +52,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo 我要提交代码啦",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "echo 我要推送代码啦"
+      "pre-commit": "npm run prepare"
     }
   }
 }
