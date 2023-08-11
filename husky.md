@@ -1,3 +1,5 @@
+https://typicode.github.io/husky/guide.html
+
 # 配置husky
 
 ## 安装依赖
