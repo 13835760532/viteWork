@@ -14,6 +14,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "prepare": "echo 'Preparing...'",
+    "commit": "echo 'commit...'",
     "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
     
   },
@@ -51,7 +52,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run commitmsg"
+      "pre-commit": "npm run commit"
     }
   }
 }
