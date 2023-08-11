@@ -1,4 +1,9 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/sh
+# .husky/pre-commit
 
-npm run prepare
+# 获取提交的文件列表
+file_list=$(git diff --cached --name-only $HUSKY_GIT_PARAMS)
+
+# 在此处添加你想要执行的代码，例如运行测试、代码风格检查等
+
+
