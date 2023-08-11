@@ -14,9 +14,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "prepare": "echo 'Preparing...'",
-    "commit": "echo 'commit...'",
-    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
-    
+    "pre-commit": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "dependencies": {
     "pinia": "^2.1.4",
